@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/global.css" />
     <link rel="stylesheet" href="./src/css/base.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
     <link
       rel="shortcut icon"
       href="./src/img/barber-pole.png"
@@ -15,8 +16,12 @@
     <title>Barbearia</title>
   </head>
   <body data-tema="light">
-    <header>
-      <img src="./src/img/logo-light.svg" alt="" id="logo" />
+    <header class="headerCor">
+      <img
+        src="./src/img/logo-light.svg"
+        alt="Montecarlo Barbearia logo"
+        id="logo"
+      />
       <nav class="menu">
         <ul>
           <li class="menuLink"><a href="#">Início</a></li>
@@ -29,7 +34,55 @@
         <img src="./src/img/night-mode.png" id="tema" />
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="principal">
+        <h1>
+          Bem vindo a <br /><span id="principalNome">Montecarlo Barbearia</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          ipsum a quisquam accusamus, similique velit quam corporis natus,
+          exercitationem iure, perspiciatis quas rem nihil! Reiciendis
+          aspernatur ducimus impedit cupiditate provident!
+        </p>
+      </section>
+      <section class="sobre">
+        <img src="./src/img/divsobre.jpg" alt="" id="imgSobre" />
+        <div class="textoSobre">
+          <div class="titulo">
+            <img src="./src/img/losango-light.png" alt="" />
+            <h3>Sobre</h3>
+          </div>
+          <p>
+            A Montecarlo Barbearia nasceu em 1991, trazendo para a Vila Madalena
+            um novo conceito de cuidado com cliente. Desde de sua fundação,
+            destacou-se pela excelência de seus profissionais, pela qualidade e
+            sofisticação de seus serviços. Com um ambiente diferenciado, a
+            barbearia oferece um amplo espaço de lazer, como fliperama, mesa de
+            sinuca e jukebox, além de bebidas diversas.
+          </p>
+              <div class="titulo">
+                <img src="./src/img/losango-light.png" alt="" />
+                <h3>Missão</h3>
+              </div>
+              <p>
+                Favorecer sua autoestima, proporcionando uma experiência de cuidado,
+                sofisticação e bem-estar.
+              </p>
+          <div class="titulo">
+            <img src="./src/img/losango-light.png" alt="" />
+            <h3>Visão</h3>
+          </div>
+          <ul class="listaVisao">
+              <li>Equipe experiente;</li>
+              <li>Conduta ética e respeitosa;</li>
+              <li>Cuidado e empatia com o cliente;</li>
+              <li>Relacionamento baseado na responsabilidade e integridade.</li>
+          </ul>
+        </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <img src="./src/img/barber-pole.png" id="pole" />
       <img src="./src/img/footer.svg" id="logoFooter" />
