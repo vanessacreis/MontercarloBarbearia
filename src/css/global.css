@@ -1,23 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Tajawal:wght@200;300;400&family=Teko:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Tajawal:wght@200;300;400&family=Teko:wght@300;400;500&display=swap");
 
-body{
-    --Oswald: 'Oswald', sans-serif;
-    --Tajawal: 'Tajawal', sans-serif;
-    --Teko: 'Teko', sans-serif;
-    --vermelho: #7B1914;
-    --marrom:#473D39; 
+body {
+  --Oswald: "Oswald", sans-serif;
+  --Tajawal: "Tajawal", sans-serif;
+  --Teko: "Teko", sans-serif;
+  --vermelho: #7b1914;
+  --marrom: #473d39;
 }
 
-body[data-tema="light"]{
-    --background: #C7C1AF;
-    --texto: #0D0806;
-    --destaque: #A1967F;
-    --header: #A1967F;
+body[data-tema="light"] {
+  --background: #c7c1af;
+  --menuTxt: #473d39;
+  --texto: #0d0806;
+  --destaque: #a1967f;
+  --header: #a1967f;
 }
 
-body[data-tema="dark"]{
-    --background: #0D0806;
-    --texto: #C7C1AF;
-    --destaque: #A1967F;
-    --header: #0D0806;
+body[data-tema="dark"] {
+  --background: #0d0806;
+  --menuTxt: #c7c1af;
+  --texto: #c7c1af;
+  --destaque: #a1967f;
+  --header: #0d0806;
 }
