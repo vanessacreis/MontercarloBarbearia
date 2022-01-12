@@ -13,7 +13,7 @@ O propósito desse projeto é desenvolver uma página institucional de uma barbe
 
 ### Notion.
 
- <img width="600px" height="450px" src="./img/README/notion.png">
+ <img width="600px" height="450px" src="./src/img/README/notion.png">
  
 ### Figma.
- <img  width="600px" height="450px" src="./img/README/figma.png">
+ <img  width="600px" height="450px" src="./src/img/README/figma.png">
