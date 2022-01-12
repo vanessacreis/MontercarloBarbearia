@@ -12,8 +12,8 @@ O propósito desse projeto é desenvolver uma página institucional de uma barbe
     * Javascript: Linguagem de programação.
 
 <div style="display:flex flex-direction:column justify-content:center">
-> Notion.
-> <img width="600px" height="450px" src="./img/README/notion.png">
-> Figma.
-> <img  width="600px" height="450px" src="./img/README/figma.png">
+### Notion.
+ <img width="600px" height="450px" src="./img/README/notion.png">
+### Figma.
+ <img  width="600px" height="450px" src="./img/README/figma.png">
 </div>
