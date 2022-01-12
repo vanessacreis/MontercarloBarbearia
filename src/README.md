@@ -11,7 +11,9 @@ O propósito desse projeto é desenvolver uma página institucional de uma barbe
     * CSS3: Linguagem de estilização;
     * Javascript: Linguagem de programação.
 
+<div style="display:flex flex-direction:column justify-content:center">
 > Notion.
-> <img width="400px" height="500px" src="./img/README/notion.png">
+> <img width="600px" height="450px" src="./img/README/notion.png">
 > Figma.
-> <img  width="400px" height="500px" src="./img/README/figma.png">
+> <img  width="600px" height="450px" src="./img/README/figma.png">
+</div>
