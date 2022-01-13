@@ -21,7 +21,7 @@ header {
   margin-left: 10px;
 }
 
-.menu {
+#menu {
   width: 100%;
   margin-right: 10px;
   display: flex;
@@ -30,7 +30,7 @@ header {
   margin-right: 25px;
 }
 
-.menu > ul {
+#menu > ul {
   width: 70%;
   display: flex;
   justify-content: space-evenly;
@@ -50,6 +50,18 @@ header {
   color: var(--vermelho);
   text-decoration: overline;
   transition: 0.8s;
+}
+
+.btn {
+  display: none;
+  background-color: transparent;
+  border-style: none;
+}
+
+#imgHamburguer {
+  display: none;
+  height: 50px;
+  width: 50px;
 }
 
 #tema {

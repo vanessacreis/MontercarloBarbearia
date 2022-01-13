@@ -10,7 +10,7 @@ body {
 
 body[data-tema="light"] {
   --background: #c7c1af;
-  --menuTxt: #473d39;
+  --menuTxt: #0d0806;
   --texto: #0d0806;
   --destaque: #a1967f;
   --header: #a1967f;
