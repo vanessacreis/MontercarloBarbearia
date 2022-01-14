@@ -1,0 +1,270 @@
+.headerCor {
+  background-color: #a1967f09;
+  position: absolute;
+  z-index: 3;
+}
+
+.principal {
+  height: 100vh;
+  background-image: url(../img/bghome.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal > h1 {
+  width: 60%;
+  font-family: var(--Oswald);
+  font-size: 55px;
+  text-transform: uppercase;
+  color: var(--texto);
+  text-align: end;
+  text-shadow: 2px 2px 10px var(--marrom);
+}
+
+.animaTitulo {
+  animation: animaTitulo 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+#principalNome {
+  color: var(--vermelho);
+}
+
+.principal > p {
+  width: 60%;
+  font-family: var(--Tajawal);
+  font-size: 20px;
+  font-weight: bolder;
+  color: #0d0806;
+  text-align: justify;
+  animation: animaTexto 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+#sobre {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#imgSobre {
+  width: 45%;
+  height: 90%;
+  margin-left: 2%;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px var(--marrom);
+}
+
+.textoSobre {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 5%;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.titulo > img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.titulo > h3 {
+  font-size: 22px;
+  font-family: var(--Oswald);
+  color: var(--vermelho);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.textoSobre > p {
+  font-family: var(--Tajawal);
+  font-size: 18px;
+  text-align: justify;
+  color: var(--texto);
+}
+
+.listaVisao {
+  font-family: var(--Tajawal);
+  font-size: 18px;
+  text-align: justify;
+  color: var(--texto);
+}
+
+.endereco {
+  width: 100%;
+  height: 80vh;
+}
+
+.endereco > h2 {
+  font-family: var(--Oswald);
+  color: var(--vermelho);
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.unidades {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.pinheiros,
+.madalena {
+  margin: 0 2%;
+  color: var(--texto);
+  font-family: var(--Tajawal);
+  font-size: 20px;
+  text-align: center;
+}
+
+.pinheiros > h4,
+.madalena > h4 {
+  color: var(--vermelho);
+}
+
+.imgUnidade {
+  width: 350px;
+  box-shadow: 2px 2px 10px var(--marrom);
+  border-radius: 4px;
+  opacity: 70%;
+}
+
+.imgUnidade:hover {
+  opacity: 100%;
+  transition: 1.5s;
+  width: 380px;
+}
+
+@keyframes animaTitulo {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animaTexto {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 850px) {
+  .menuLink > a {
+    display: none;
+  }
+  #menu > ul {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+  }
+
+  #menu.buttonHamburguer .menuLink > a {
+    display: flex;
+  }
+  /* #menu.deuCerto {
+    flex-direction: column;
+  } */
+
+  .input {
+    width: 100%;
+  }
+  .btn {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  #imgHamburguer {
+    display: flex;
+  }
+
+  .principal {
+    background-size: cover;
+  }
+
+  .principal > h1 {
+    font-size: 30px;
+  }
+
+  .principal > p {
+    font-size: 15px;
+  }
+
+  .textoSobre {
+    width: 80%;
+    margin: 8%;
+  }
+
+  #imgSobre {
+    display: none;
+  }
+
+  .titulo > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .titulo > h3 {
+    font-size: 20px;
+  }
+
+  .textoSobre > p,
+  .listaVisao {
+    font-size: 15px;
+  }
+
+  .endereco {
+    width: 80%;
+    height: 90%;
+  }
+
+  .unidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .imgUnidade {
+    width: 80%;
+    box-shadow: 2px 2px 10px var(--marrom);
+    border-radius: 4px;
+  }
+
+  .imgUnidade:hover {
+    width: 80%;
+    opacity: 100%;
+  }
+
+  .pinheiros,
+  .madalena {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+}

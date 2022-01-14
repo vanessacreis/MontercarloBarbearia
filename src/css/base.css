@@ -15,13 +15,27 @@ header {
   justify-content: space-between;
 }
 
-#logo {
-  height: 140px;
+.logo {
   width: 30%;
-  margin-left: 10px;
+  background-image: url(../img/logo-light.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.menu {
+.bigode {
+  width: 40%;
+  position: relative;
+  left: 23%;
+  top: 5%;
+  animation: sacode 1s 2s alternate;
+}
+
+.mexeBigode:hover {
+  animation: mexeBigode 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate
+    both;
+}
+
+#menu {
   width: 100%;
   margin-right: 10px;
   display: flex;
@@ -30,7 +44,7 @@ header {
   margin-right: 25px;
 }
 
-.menu > ul {
+#menu > ul {
   width: 70%;
   display: flex;
   justify-content: space-evenly;
@@ -52,14 +66,26 @@ header {
   transition: 0.8s;
 }
 
-#tema {
+.btn {
+  display: none;
+  background-color: transparent;
+  border-style: none;
+}
+
+#imgHamburguer {
+  display: none;
+  height: 50px;
+  width: 50px;
+}
+
+.tema {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 main {
-  width: 100%;
-  height: 100vh;
+  flex: 1 0 auto;
 }
 
 footer {
@@ -69,6 +95,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 
 #pole {
@@ -79,4 +106,68 @@ footer {
 #logoFooter {
   height: 100px;
   margin-right: 10px;
+}
+
+@keyframes sacode {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+    transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+    transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+@keyframes mexeBigode {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
 }

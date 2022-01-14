@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Montecarlo Barbearia</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/global.css" />
+    <link rel="stylesheet" href="./src/css/base.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/img/barber-pole.png"
+      type="image/x-icon"
+    />
+    <title>Barbearia</title>
+  </head>
+  <body data-tema="light">
+    <header class="headerCor">
+      <div class="logo">
+        <img src="./src/img/bigodinho.svg" alt="" class="bigode mexeBigode">
+      </div>
+      
+      <nav id="menu">
+        <ul>
+          <li class="menuLink"><a href="#">Início</a></li>
+          <li class="menuLink"><a href="#sobre">Sobre</a></li>
+          <li class="menuLink"><a href="#">Galeria</a></li>
+          <li class="menuLink"><a href="#">Serviços</a></li>
+          <li class="menuLink"><a href="#">Produto</a></li>
+          <li class="menuLink"><a href="#">Contato</a></li>
+        </ul>
+        <button class="btn">
+          <img src="./src/img/menuHamburguer.png" id="imgHamburguer" alt="" />
+        </button>
+        <img src="./src/img/night-mode.png" class="tema trocaTema" />
+      </nav>
+    </header>
+    <main>
+      <section class="principal">
+        <h1 class="animaTitulo">
+          Bem vindo a <br /><span id="principalNome">Montecarlo Barbearia</span>
+        </h1>
+        <p class="animaTexto">
+          Unimos o clássico as novas tendências para trazer a você o melhor em cuidados com cabelo e barba com excelência e profissionalismo, tudo isso em um ambiente descontraído e aconchegante. 
+        </p>
+      </section>
+      <section id="sobre">
+        <img src="./src/img/divsobre.jpg" alt="" id="imgSobre" />
+        <div class="textoSobre">
+          <div class="titulo">
+            <img src="./src/img/losango-light.svg" alt="" class="losango"/>
+            <h3>Sobre</h3>
+          </div>
+          <p>
+            A Montecarlo Barbearia nasceu em 1991, trazendo para a Vila Madalena
+            um novo conceito de cuidado com cliente. Desde de sua fundação,
+            destacou-se pela excelência de seus profissionais, pela qualidade e
+            sofisticação de seus serviços. Com um ambiente diferenciado, a
+            barbearia oferece um amplo espaço de lazer, como fliperama, mesa de
+            sinuca e jukebox, além de bebidas diversas.
+          </p>
+              <div class="titulo">
+                <img src="./src/img/losango-light.svg" alt="" class="losango" />
+                <h3>Missão</h3>
+              </div>
+              <p>
+                Favorecer sua autoestima, proporcionando uma experiência de cuidado,
+                sofisticação e bem-estar.
+              </p>
+          <div class="titulo">
+            <img src="./src/img/losango-light.svg" alt="" class="losango"/>
+            <h3>Visão</h3>
+          </div>
+          <ul class="listaVisao">
+              <li>Equipe experiente;</li>
+              <li>Conduta ética e respeitosa;</li>
+              <li>Cuidado e empatia com o cliente;</li>
+              <li>Relacionamento baseado na responsabilidade e integridade.</li>
+          </ul>
+        </div>
+        </div>
+      </section>
+      <section class="endereco">
+        <h2>Unidades</h2>
+        <div class="unidades">
+          <div class="pinheiros">
+            <img src="./src/img/unidadepinheiros.jpg" alt="Unidade Pinheiros" class="imgUnidade">
+            <h4>Unidade Pinheiros</h4>
+            <p>Rua Fereira de Araújo, Pinheiros, SP.</p>
+          </div>
+         <div class="madalena">
+            <img src="./src/img/unidadevilamadalena.jpg" alt="Unidade Vila Madalena" class="imgUnidade">
+            <h4>Unidade Vila Madalena</h4>
+            <p>Rua Wisard, Vila Madalena, SP.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="./src/img/barber-pole.png" id="pole" />
+      <img src="./src/img/footer.svg" id="logoFooter" />
+    </footer>
     
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./src/js/controller/index-controller.js"></script>
+    <script src="./src/js/model/index-model.js"></script>
+    <script src="./src/js/view/index-view.js"></script>
+    <script src="./src/js/index_main.js"></script>
+  </body>
 </html>
