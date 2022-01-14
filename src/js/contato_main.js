@@ -5,3 +5,8 @@ function menuResponsivo() {
 }
 
 button.addEventListener("click", menuResponsivo);
+
+const controller = new Controller();
+$(".troca-tema").click(() => {
+  controller.confereTema();
+});
