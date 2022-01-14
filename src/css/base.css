@@ -17,7 +17,7 @@ header {
 
 .logo {
   width: 30%;
-  background-image: url(../img/logoLight.svg);
+  background-image: url(../img/logo-light.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -78,9 +78,10 @@ header {
   width: 50px;
 }
 
-#tema {
+.tema {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 main {
