@@ -12,7 +12,13 @@
   </head>
   <body data-tema="light">
     <header>
-      <img src="../img/logo-light.svg" alt="" id="logo" />
+      <div class="logo">
+        <img
+          src="../img/bigodinho.svg"
+          alt=""
+          class="bigode wobble-hor-top shake-top"
+        />
+      </div>
       <nav id="menu">
         <ul>
           <li class="menuLink"><a href="#">Início</a></li>
@@ -25,11 +31,11 @@
         <button class="btn">
           <img src="../img/menuHamburgue.png" id="imgHamburguer" alt="" />
         </button>
-        <img src="../img/night-mode.png" id="tema" />
+        <img src="../img/night-mode.png" class="tema troca-tema" />
       </nav>
     </header>
     <main class="corpo">
-      <form action="" class="form">
+      <form action="" class="form animation">
         <fieldset>
           <h1 class="tituloContatos">CONTATO</h1>
           <label class="label" for="">Nome</label>
@@ -37,19 +43,23 @@
           <label class="label" for="">E-mail</label>
           <input type="text" name="" id="" class="input" />
           <label class="label" for="">Mensagem</label>
-          <textarea name="" id="textArea" cols="30" rows="10"></textarea>
+          <textarea name="" id="textArea" cols="30" rows="5"></textarea>
           <button type="submit" class="button">Enviar</button>
         </fieldset>
       </form>
       <div class="containerImg">
-        <img src="../img/barba.png" alt="" class="img" />
-        <img src="../img/whisky.png" alt="" class="img" />
+        <img src="../img/barba.png" alt="" class="img animation" />
+        <img src="../img/whisky.png" alt="" class="img animation" />
       </div>
     </main>
     <footer>
       <img src="../img/barber-pole.png" id="pole" />
       <img src="../img/footer.svg" id="logoFooter" />
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/controller/contato_controller.js"></script>
+    <script src="../js/model/contato_model.js"></script>
+    <script src="../js/view/contato_view.js"></script>
     <script src="../js/contato_main.js"></script>
   </body>
 </html>
