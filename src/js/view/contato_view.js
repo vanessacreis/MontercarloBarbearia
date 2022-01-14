@@ -1,7 +1,9 @@
-// class View {
-//     trocaCorDoIcone(tema) {
-//       $("js-troca-tema").attr("src", `../img/night-mode.png"${tema}.svg`);
-//       $(".logo").attr("src", `./src/img/icons/moon-${tema}.svg`);
-//       $(".logo").attr("src", `./src/img/icons/moon-${tema}.svg`);
-//     }
-//   }
+class View {
+  mostraEmail(resultadoValidaEmail) {
+    if (resultadoValidaEmail == "e-mail válido") {
+      $("#erro_email").css("display", "none");
+    } else {
+      $("#erro_email").css("display", "flex");
+    }
+  }
+}

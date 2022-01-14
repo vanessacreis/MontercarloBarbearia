@@ -10,3 +10,9 @@ const controller = new Controller();
 $(".troca-tema").click(() => {
   controller.confereTema();
 });
+
+$(".button").click(function () {
+  const controller = new Controller($("#email").val());
+
+  controller.validandoEmail();
+});
