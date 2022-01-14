@@ -17,15 +17,14 @@
   </head>
   <body data-tema="light">
     <header class="headerCor">
-      <img
-        src="./src/img/logo-light.svg"
-        alt="Montecarlo Barbearia logo"
-        id="logo"
-      />
+      <div class="logo">
+        <img src="./src/img/bigodinho.svg" alt="" class="bigode mexeBigode">
+      </div>
+      
       <nav id="menu">
         <ul>
           <li class="menuLink"><a href="#">Início</a></li>
-          <li class="menuLink"><a href="#">Sobre</a></li>
+          <li class="menuLink"><a href="#sobre">Sobre</a></li>
           <li class="menuLink"><a href="#">Galeria</a></li>
           <li class="menuLink"><a href="#">Serviços</a></li>
           <li class="menuLink"><a href="#">Produto</a></li>
@@ -34,22 +33,22 @@
         <button class="btn">
           <img src="./src/img/menuHamburguer.png" id="imgHamburguer" alt="" />
         </button>
-        <img src="./src/img/night-mode.png" id="tema" />
+        <img src="./src/img/night-mode.png" class="mudaTema" id="tema" />
       </nav>
     </header>
     <main>
       <section class="principal">
-        <h1>
+        <h1 class="animaTitulo">
           Bem vindo a <br /><span id="principalNome">Montecarlo Barbearia</span>
         </h1>
-        <p>
+        <p class="animaTexto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
           ipsum a quisquam accusamus, similique velit quam corporis natus,
           exercitationem iure, perspiciatis quas rem nihil! Reiciendis
           aspernatur ducimus impedit cupiditate provident!
         </p>
       </section>
-      <section class="sobre">
+      <section id="sobre">
         <img src="./src/img/divsobre.jpg" alt="" id="imgSobre" />
         <div class="textoSobre">
           <div class="titulo">
@@ -85,12 +84,30 @@
         </div>
         </div>
       </section>
+      <section class="endereco">
+        <h2>Unidades</h2>
+        <div class="unidades">
+          <div class="pinheiros">
+            <img src="./src/img/unidadepinheiros.jpg" alt="Unidade Pinheiros" class="imgUnidade">
+            <h4>Unidade Pinheiros</h4>
+            <p>Rua Fereira de Araújo, Pinheiros, SP.</p>
+          </div>
+         <div class="madalena">
+            <img src="./src/img/unidadevilamadalena.jpg" alt="Unidade Vila Madalena" class="imgUnidade">
+            <h4>Unidade Vila Madalena</h4>
+            <p>Rua Wisard, Vila Madalena, SP.</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <img src="./src/img/barber-pole.png" id="pole" />
       <img src="./src/img/footer.svg" id="logoFooter" />
     </footer>
 
+    <script src="./src/js/controller/index-controller.js"></script>
+    <script src="./src/js/model/index-model.js"></script>
+    <script src="./src/js/view/index-view.js"></script>
     <script src="./src/js/index_main.js"></script>
   </body>
 </html>
