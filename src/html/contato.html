@@ -38,12 +38,26 @@
       <form action="" class="form animation">
         <fieldset>
           <h1 class="tituloContatos">CONTATO</h1>
-          <label class="label" for="">Nome</label>
-          <input type="text" name="" id="" class="input" />
-          <label class="label" for="">E-mail</label>
-          <input type="text" name="" id="" class="input" />
-          <label class="label" for="">Mensagem</label>
-          <textarea name="" id="textArea" cols="30" rows="5"></textarea>
+          <label class="label" for="name">Nome</label>
+          <input type="text" name="name" id="" class="input" required />
+          <label class="label" for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input"
+            placeholder="ex: xxxxx@gmail.com"
+            required
+          />
+          <p id="erro_email">E-mail inválido</p>
+          <label class="label" for="mensagem">Mensagem</label>
+          <textarea
+            name="mensagem"
+            id="textArea"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
           <button type="submit" class="button">Enviar</button>
         </fieldset>
       </form>

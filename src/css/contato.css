@@ -30,7 +30,7 @@ header {
 }
 
 .wobble-hor-top {
-  animation: wobble-hor-top 1s 3s alternate;
+  animation: wobble-hor-top 1s 2s alternate;
 }
 
 .shake-top:hover {
@@ -135,6 +135,15 @@ header {
 .input:hover {
   border: 1px solid var(--marrom);
 }
+#erro_email {
+  display: none;
+  color: var(--vermelho);
+  align-self: center;
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: var(--Tajawal);
+  font-weight: bold;
+}
 #textArea {
   margin-top: 10px;
   border-radius: 20px;
@@ -170,7 +179,7 @@ header {
   border-radius: 10px;
   background-color: var(--destaque);
   font-family: var(--Tajawal);
-  color: var(--texto);
+  color: var(--menuTxt);
   font-size: 18px;
   align-self: flex-end;
   border: none;
