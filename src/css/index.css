@@ -55,6 +55,7 @@
   width: 45%;
   height: 90%;
   margin-left: 2%;
+  border-radius: 4px;
   box-shadow: 2px 2px 10px var(--marrom);
 }
 

@@ -4,7 +4,6 @@ body {
   --Oswald: "Oswald", sans-serif;
   --Tajawal: "Tajawal", sans-serif;
   --Teko: "Teko", sans-serif;
-  --vermelho: #7b1914;
   --marrom: #473d39;
   --menuTxt: #0d0806;
   --header: #a1967f;
@@ -14,10 +13,12 @@ body[data-tema="light"] {
   --background: #c7c1af;
   --texto: #0d0806;
   --destaque: #a1967f;
+  --vermelho: #7b1914;
 }
 
 body[data-tema="dark"] {
   --background: #0d0806;
   --texto: #c7c1af;
   --destaque: #a1967f;
+  --vermelho: #a62121;
 }
