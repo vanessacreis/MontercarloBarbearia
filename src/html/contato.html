@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/contato.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link
+      rel="shortcut icon"
+      href="../img/barber-pole.png"
+      type="image/x-icon"
+    />
+    <title>Contato - Montecarlo Barbearia</title>
+  </head>
+  <body data-tema="light">
+    <header>
+      <div class="logo">
+        <img
+          src="../img/bigodinho.svg"
+          alt=""
+          class="bigode wobble-hor-top shake-top"
+        />
+      </div>
+      <nav id="menu">
+        <ul>
+          <li class="menuLink"><a href="#">Início</a></li>
+          <li class="menuLink"><a href="#">Sobre</a></li>
+          <li class="menuLink"><a href="#">Galeria</a></li>
+          <li class="menuLink"><a href="#">Serviços</a></li>
+          <li class="menuLink"><a href="#">Produto</a></li>
+          <li class="menuLink"><a href="#">Contato</a></li>
+        </ul>
+        <button class="btn">
+          <img src="../img/menuHamburgue.png" id="imgHamburguer" alt="" />
+        </button>
+        <img src="../img/night-mode.png" class="tema troca-tema" />
+      </nav>
+    </header>
+    <main class="corpo">
+      <form action="" class="form animation">
+        <fieldset>
+          <h1 class="tituloContatos">CONTATO</h1>
+          <label class="label" for="name">Nome</label>
+          <input type="text" name="name" id="" class="input" required />
+          <label class="label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input"
+            placeholder="ex: xxxxx@gmail.com"
+            required
+          />
+          <p id="erro_email">E-mail inválido</p>
+          <label class="label" for="mensagem">Mensagem</label>
+          <textarea
+            name="mensagem"
+            id="textArea"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit" class="button">Enviar</button>
+        </fieldset>
+      </form>
+      <div class="containerImg">
+        <img src="../img/barba.png" alt="" class="img animation" />
+        <img src="../img/whisky.png" alt="" class="img animation" />
+      </div>
+    </main>
+    <footer>
+      <img src="../img/barber-pole.png" id="pole" />
+      <img src="../img/footer.svg" id="logoFooter" />
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/controller/contato_controller.js"></script>
+    <script src="../js/model/contato_model.js"></script>
+    <script src="../js/view/contato_view.js"></script>
+    <script src="../js/contato_main.js"></script>
+  </body>
+</html>
