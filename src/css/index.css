@@ -176,32 +176,8 @@
 }
 
 @media (max-width: 850px) {
-  .menuLink > a {
-    display: none;
-  }
-  #menu > ul {
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 20px;
-  }
-
-  #menu.buttonHamburguer .menuLink > a {
-    display: flex;
-  }
-  /* #menu.deuCerto {
-    flex-direction: column;
-  } */
-
-  .input {
-    width: 100%;
-  }
-  .btn {
-    display: flex;
-    margin-right: 20px;
-  }
-
-  #imgHamburguer {
-    display: flex;
+  .headerCor {
+    background-color: var(--header);
   }
 
   .principal {

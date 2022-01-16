@@ -18,20 +18,20 @@
   <body data-tema="light">
     <header class="headerCor">
       <div class="logo">
-        <img src="./src/img/bigodinho.svg" alt="" class="bigode mexeBigode">
+        <div class="bigode mexeBigode"></div>
       </div>
       
-      <nav id="menu">
-        <ul>
-          <li class="menuLink"><a href="#">Início</a></li>
-          <li class="menuLink"><a href="#sobre">Sobre</a></li>
-          <li class="menuLink"><a href="#">Galeria</a></li>
-          <li class="menuLink"><a href="#">Serviços</a></li>
-          <li class="menuLink"><a href="#">Produto</a></li>
-          <li class="menuLink"><a href="./src/html/contato.html">Contato</a></li>
+      <nav class="menu">
+        <ul class="menuLista">
+          <li class="menuItem"><a href="./index.html" class="menuLink">Início</a></li>
+          <li class="menuItem"><a href="#" class="menuLink">Sobre</a></li>
+          <li class="menuItem"><a href="#" class="menuLink">Galeria</a></li>
+          <li class="menuItem"><a href="#" class="menuLink">Serviços</a></li>
+          <li class="menuItem"><a href="#" class="menuLink">Produto</a></li>
+          <li class="menuItem"><a href="./src/html/contato.html" class="menuLink">Contato</a></li>
         </ul>
-        <button class="btn">
-          <img src="./src/img/menuHamburguer.png" id="imgHamburguer" alt="" />
+        <button class="hamburguer">
+          <img src="./src/img/menuHamburgue.png" alt="" class="hamburguerImg">
         </button>
         <img src="./src/img/night-mode.png" class="tema trocaTema" />
       </nav>
@@ -103,6 +103,7 @@
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./src/js/menu.js"></script>
     <script src="./src/js/controller/index-controller.js"></script>
     <script src="./src/js/model/index-model.js"></script>
     <script src="./src/js/view/index-view.js"></script>

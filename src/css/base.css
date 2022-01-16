@@ -16,17 +16,26 @@ header {
 }
 
 .logo {
-  width: 30%;
-  background-image: url(../img/logo-light.svg);
+  width: 300px;
+  height: 150px;
+  background-image: url(../img/logoLight.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .bigode {
-  width: 40%;
-  position: relative;
-  left: 23%;
-  top: 5%;
+  width: 50%;
+  height: 22%;
+  top: 6%;
+  background-image: url(../img/bigodinho.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
   animation: sacode 1s 2s alternate;
 }
 
@@ -35,53 +44,53 @@ header {
     both;
 }
 
-#menu {
-  width: 100%;
-  margin-right: 10px;
+.menu {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: end;
-  margin-right: 25px;
+  padding: 1em;
 }
 
-#menu > ul {
-  width: 70%;
+.menuLista {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
 }
 
-.menuLink > a {
+.menuLink {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--menuTxt);
   font-family: var(--Tajawal);
   font-size: 18px;
   font-weight: bolder;
+  margin-left: 30px;
 }
 
-.menuLink > a:hover {
+.menuLink:hover {
   color: var(--vermelho);
   text-decoration: overline;
   transition: 0.8s;
 }
 
-.btn {
-  display: none;
-  background-color: transparent;
-  border-style: none;
-}
-
-#imgHamburguer {
-  display: none;
-  height: 50px;
-  width: 50px;
-}
-
 .tema {
   width: 30px;
   height: 30px;
+  margin: 0 15px;
   cursor: pointer;
+}
+
+.hamburguer {
+  display: none;
+  background-color: var(--destaque);
+  border-style: none;
+  margin-right: 15px;
+}
+
+.hamburguerImg {
+  width: 50px;
+  height: 50px;
 }
 
 main {
@@ -169,5 +178,40 @@ footer {
   90% {
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
+  }
+}
+
+@media (max-width: 850px) {
+  .menuLista {
+    position: absolute;
+    align-self: flex-end;
+    left: -100%;
+    top: 100%;
+    flex-direction: column;
+    background-color: var(--header);
+    width: 35%;
+    text-align: center;
+    box-shadow: 0 10px 27px rgb(0, 0, 0, 0.005);
+  }
+
+  .menuLista.ativo {
+    left: 65%;
+  }
+
+  .menuItem {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+
+  .hamburguer {
+    display: block;
+    align-items: flex-end;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 280px) {
+  .bigode {
+    top: 15%;
   }
 }
