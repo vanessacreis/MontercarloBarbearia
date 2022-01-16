@@ -312,7 +312,12 @@ footer {
   /* #menu.deuCerto {
     flex-direction: column;
   } */
-
+  .form {
+    width: 80%;
+  }
+  .form > fieldset {
+    width: 100%;
+  }
   .input {
     width: 100%;
   }
