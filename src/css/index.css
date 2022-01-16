@@ -1,7 +1,7 @@
 .headerCor {
-  background-color: #a1967f09;
+  background-color: #a1967f04;
   position: absolute;
-  z-index: 3;
+  z-index: 1;
 }
 
 .principal {
@@ -240,8 +240,8 @@
   }
 
   .endereco {
-    width: 80%;
-    height: 90%;
+    width: 100%;
+    height: 80%;
   }
 
   .unidades {
