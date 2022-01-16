@@ -1,10 +1,19 @@
-const button = document.querySelector(".btn");
-function menuResponsivo() {
-  const menu = document.querySelector("#menu");
-  menu.classList.toggle("buttonHamburguer");
-}
+const menuHamburguer = document.querySelector(".hamburguer");
+const menuLista = document.querySelector(".menuLista");
 
-button.addEventListener("click", menuResponsivo);
+menuHamburguer.addEventListener("click", () => {
+  menuHamburguer.classList.toggle("ativo");
+  menuLista.classList.toggle("ativo");
+});
+
+const menuLink = document.querySelectorAll(".menuLink");
+
+menuLink.forEach((link) =>
+  link.addEventListener("click", () => {
+    menuHamburguer.classList.remove("ativo");
+    menuLista.classList.remove("ativo");
+  })
+);
 
 const controller = new Controller();
 $(".troca-tema").click(() => {
