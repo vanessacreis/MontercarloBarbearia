@@ -296,7 +296,7 @@ footer {
     position: absolute;
     align-self: flex-end;
     left: -100%;
-    top: 20%;
+    top: 120px;
     flex-direction: column;
     background-color: var(--header);
     width: 35%;
