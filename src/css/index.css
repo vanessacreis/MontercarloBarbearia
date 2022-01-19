@@ -30,7 +30,7 @@
 }
 
 #principalNome {
-  color: var(--vermelho);
+  color: #7b1914;
 }
 
 .principal > p {
@@ -242,5 +242,12 @@
   .madalena {
     font-size: 15px;
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .textoSobre > p,
+  .listaVisao {
+    text-align: left;
   }
 }

@@ -210,8 +210,18 @@ footer {
   }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 320px) {
+  header {
+    height: 120px;
+  }
+
   .bigode {
     top: 15%;
+  }
+}
+
+@media (max-width: 280px) {
+  .bigode {
+    top: 20%;
   }
 }
