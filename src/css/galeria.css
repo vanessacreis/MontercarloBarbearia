@@ -87,6 +87,17 @@
   border-radius: 4px;
 }
 
+.titulo {
+  margin-top: 20px;
+  font-family: var(--Oswald);
+  font-weight: 400;
+  font-size: 75px;
+  color: var(--header);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px var(--menuTxt);
+  text-align: center;
+}
+
 .galeria10 {
   background: url(../img/galeria/galeria10.jpg) center / cover no-repeat;
   grid-column: 3 / 4;
