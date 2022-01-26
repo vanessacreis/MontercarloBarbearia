@@ -1,28 +1,20 @@
 # Montecarlo Barbearia
 
-![alt text](https://raw.githubusercontent.com/vanessacreis/MontercarloBarbearia/03b1c1115309e4d343e418abfd8b97c5a1f88353/src/img/logo-dark.svg?token=AWLHYOJDXFK5XHJNVBODSHLB6F6V4)
-
-<hr>
-
-### Conteúdos
-
- <p align="center">
- <a href="#Sobre">Sobre este projeto</a> •
- <a href="#tecnologias">Tecnologias </a> • 
- <a href="#licenca">Licença</a> • 
- <a href="#autor">Autores</a>
-</p>
+![alt text](https://raw.githubusercontent.com/vanessacreis/MontercarloBarbearia/7aecfdfae42560df23d0b425c79b7e102c30291c/src/img/README/logo-dark.svg?token=AWLHYOKEQ6FYNFVELTH4KC3B6GR4C)
 
 <hr>
 
 ### 💻 Sobre o projeto
+
 <p align=justify> O propósito desse projeto foi desenvolver o front-end de uma página institucional de uma barbearia utilizando HTML, CSS e JavaScript. Durante sua execução, utilizamos o método Scrum para a divisão das tarefas e organização do tempo. </p>
 
 <p align="center"> 
 	<strong>Status do projeto:</strong> Em desenvolvimento.
 </p>
 
-Veja em: 
+<img width="650px" height="200px" src="./src/img/README/homepage.png">
+
+Veja em:
 
 [![Deploy in Vercel](https://vercel.com/button)](https://montercarlo-barbearia-nine.vercel.app/)
 
@@ -52,16 +44,24 @@ Veja em:
 
 ## 🤝 Autores
 
-<img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4D03AQFEOBt95bk1lg/profile-displayphoto-shrink_800_800/0/1642530213415?e=1648684800&v=beta&t=G3v6Q0s_GqMj43YjyF5osBlhlLUIspG0QCDO-9FyZUs" width="100px;" alt=""/>
+<div style= "display:flex;">
+<img style="border-radius: 50%; margin:10px;" src="./src/img/README/BrunoSa.jpeg" width="120px;" alt=""/>
+<div>
 <p><strong> Bruno Sá</p>
 <p> Estudante de Desenvolvimento Web Full Stack</p>
-
 <a href="https://www.linkedin.com/in/brunoasantanadesa/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+</div>
+<br/>
+</div>
 
+<div style= "display:flex;">
+<img style="border-radius: 50%; margin:10px;" src="./src/img/README/VanessaReis.jpeg" width="120px;" alt=""/>
 
-<img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4D03AQFEOBt95bk1lg/profile-displayphoto-shrink_800_800/0/1642530213415?e=1648684800&v=beta&t=G3v6Q0s_GqMj43YjyF5osBlhlLUIspG0QCDO-9FyZUs" width="100px;" alt=""/>
-
+<div>
 <p><strong> Vanessa Reis</p>
 <p> Estudante de Desenvolvimento Web Full Stack</p>
 
 <a href="https://www.linkedin.com/in/vanessacreisbh/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
+</div>
+</div>
