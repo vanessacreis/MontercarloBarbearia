@@ -16,6 +16,7 @@
   color: var(--vermelho);
   font-family: var(--Oswald);
   font-size: 48px;
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .servicos_principal {
@@ -34,12 +35,22 @@
   font-weight: 400;
   text-align: center;
 }
+.caixa_preco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.preco {
+  color: var(--vermelho);
+  font-family: var(--Tajawal);
+  font-size: 24px;
+  font-weight: bold;
+}
 .nome_servico {
   color: var(--vermelho);
   font-family: var(--Tajawal);
   font-size: 24px;
-  text-align: left;
-  margin-top: 20px;
 }
 .descricao {
   color: var(--texto);
