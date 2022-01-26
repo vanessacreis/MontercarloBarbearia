@@ -1,6 +1,6 @@
 # Montecarlo Barbearia
 
-![alt text](https://raw.githubusercontent.com/vanessacreis/MontercarloBarbearia/7aecfdfae42560df23d0b425c79b7e102c30291c/src/img/README/logo-dark.svg?token=AWLHYOKEQ6FYNFVELTH4KC3B6GR4C)
+![alt text](./src/img/README/logo-dark.svg)
 
 <hr>
 
@@ -12,7 +12,7 @@
 	<strong>Status do projeto:</strong> Em desenvolvimento.
 </p>
 
-<img width="650px" height="200px" src="./src/img/README/homepage.png">
+<img align=center width="700px" src="./src/img/README/homepage.png">
 
 Veja em:
 
