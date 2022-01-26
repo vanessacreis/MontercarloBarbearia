@@ -166,16 +166,22 @@
     justify-content: center;
     align-items: center;
   }
-  .produtos_principal_caixa {
+  .servicos_principal {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
-  .img {
-    margin-top: 30px;
+  .preco,
+  .nome_servico,
+  .descricao {
+    font-size: 18px;
   }
-  .input {
-    width: 80%;
+  .title {
+    font-size: 24px;
+  }
+
+  .titulo_servico {
+    font-size: 20px;
   }
 }
 
