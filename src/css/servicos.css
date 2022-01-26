@@ -8,112 +8,67 @@
   flex-direction: column;
 }
 
-.pesquisa {
+.title {
   margin-top: 100px;
   margin-bottom: 50px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  color: var(--vermelho);
+  font-family: var(--Oswald);
+  font-size: 48px;
 }
-.input {
-  width: 50%;
-  height: 50px;
-  border-radius: 20px;
-  font-size: 24px;
-  font-family: var(--Tajawal);
-  padding: 30px;
-}
-.button {
-  background-color: var(--background);
-  border-style: none;
-  margin-left: 10px;
-  cursor: pointer;
-}
-.loupe {
-  height: 60px;
-  width: 60px;
-}
-.produtos_principal_caixa {
+
+.servicos_principal {
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  grid-template-rows: 30% 30% 30%;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 25% 25% 45%;
   width: 80%;
   height: 200vh;
+  grid-gap: 2%;
 }
-.produto {
+
+.titulo_servico {
+  color: var(--vermelho);
+  font-family: var(--Oswald);
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+.nome_servico {
+  color: var(--vermelho);
+  font-family: var(--Tajawal);
+  font-size: 24px;
+  text-align: left;
+  margin-top: 20px;
+}
+.descricao {
+  color: var(--texto);
+  font-family: var(--Tajawal);
+  font-size: 20px;
+}
+
+.caixa_texto_cabelo {
   grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.caixa_img_cabelo {
+  grid-column: 2 / 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-.img {
-  height: 60%;
-  width: 60%;
-  object-fit: cover;
+  background: url(../img/servicos/cabelo.jpg) center / cover no-repeat;
   box-shadow: 2px 2px 10px var(--marrom);
   border-radius: 4px;
 }
-.img:hover {
-  width: 65%;
-  height: 62.5%;
-  transition: 0.8s;
-}
-.texto {
-  font-family: var(--Tajawal);
-  color: var(--texto);
-  font-size: 20px;
-  width: 80%;
-  text-align: center;
-  margin-top: 10px;
-}
-.caixa_carrinho {
-  display: flex;
-  justify-content: space-evenly;
-  width: 80%;
-  margin-top: 10px;
-}
-.preco {
-  font-family: var(--Tajawal);
-  color: var(--texto);
-  font-size: 20px;
-}
-.carrinho {
-  background-color: var(--texto);
-  border-style: none;
-  border-radius: 5px;
-  width: 100px;
-  height: 40px;
-  cursor: pointer;
-}
-.carrinho:hover {
-  background-color: var(--vermelho);
-  transition: 0.6s;
-}
-.icon_sacola {
-  height: 30px;
-  width: 30px;
-}
-.produto-1 {
-  grid-column: 2 / 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-.produto-2 {
-  grid-column: 3 / 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
 
-.produto-3 {
+.caixa_img_barba {
   grid-column: 1 / 2;
   grid-row: 2/3;
   display: flex;
@@ -121,39 +76,30 @@
   justify-content: center;
   align-items: center;
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  background: url(../img/servicos/barba.jpg) center / cover no-repeat;
+  box-shadow: 2px 2px 10px var(--marrom);
+  border-radius: 4px;
 }
 
-.produto-4 {
+.caixa_texto_barba {
   grid-column: 2 / 3;
   grid-row: 2/3;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.produto-5 {
-  grid-column: 3 / 4;
-  grid-row: 2/3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-.produto-6 {
+.caixa_texto_especial {
   grid-column: 1 / 2;
   grid-row: 3/4;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.produto-7 {
+.caixa_img_especial {
   grid-column: 2 / 3;
   grid-row: 3/4;
   display: flex;
@@ -161,16 +107,9 @@
   justify-content: center;
   align-items: center;
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-.produto-8 {
-  grid-column: 3 / 4;
-  grid-row: 3/4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  background: url(../img/servicos/servicos.jpg) center / cover no-repeat;
+  box-shadow: 2px 2px 10px var(--marrom);
+  border-radius: 4px;
 }
 
 @keyframes fade-in {
