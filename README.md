@@ -9,7 +9,7 @@
 <p align=justify> O propósito desse projeto foi desenvolver o front-end de uma página institucional de uma barbearia utilizando HTML, CSS e JavaScript. Durante sua execução, utilizamos o método Scrum para a divisão das tarefas e organização do tempo. </p>
 
 <p align="center"> 
-	<strong>Status do projeto:</strong> Em desenvolvimento.
+	<strong>Status do projeto:</strong> Concluído.
 </p>
 
 <img align=center width="700px" src="./src/img/README/homepage.png">
